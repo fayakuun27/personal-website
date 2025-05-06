@@ -18,17 +18,9 @@ function submitData(event) {
   } else if (message == "") {
     return alert("message harus diisi");
   }
-
-  // programtically link
-  let a = document.createElement("a");
-
-  a.href = `mailto:faya.it27@gmail.com?subject=${encodeURIComponent(
-    subject
-  )}&body=Hello, my name is ${encodeURIComponent(
-    name
-  )}.%0D%0A%0D%0APhone Number: ${encodeURIComponent(
-    phoneNumber
-  )}%0D%0A%0D%0AMessage:%0D%0A${encodeURIComponent(message)}`;
-
-  a.click();
+  console.log(`Name: ${name}`)
+  console.log(`Email: ${email}`);
+  console.log(`Phone Number: ${phoneNumber}`);
+  console.log(`Subject: ${subject}`);
+  console.log(`Message: ${message}`);
 }
